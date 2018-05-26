@@ -16,7 +16,7 @@ html, body{
 }
 
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    
 }
 
 
@@ -30,8 +30,9 @@ nav{
     width: 100%;
     height: 80px;
     position: fixed;
-    background-color: rgba(3, 108, 255, 1);
+    background-color: rgba(3, 108, 255, .0);
     z-index: 200;
+    box-sizing: border-box;
 }
 
 /* Logo */
@@ -40,12 +41,17 @@ nav{
     display: inline-block;
     width: 170px;
     height: 80px;
+    float: left;
 }
 
 .logo{
     width: 100%;
     height: 100%;
     display: inline-block;
+}
+
+.logo:hover>.name-logo{
+    color:#B6B6B6 !important;
 }
 
 .logo>img,
@@ -72,6 +78,7 @@ nav{
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 500;
+    transition: 300ms;
 }
 
 .name-logo .first-name,
@@ -83,11 +90,111 @@ nav{
     letter-spacing: 4px;
 }
 
+/* ITENS */
+.itens-container{
+    display: inline-block;
+    float: right;
+    height: 80px;
+}
+
+.itens-container ul{
+    list-style: none;
+    position: relative;
+    top: 50%;
+    transform: translate(0,-50%);
+    box-sizing: border-box;
+}
+
+.itens-container ul li{
+    display: inline-block;
+    margin: 0 0;
+}
+
+
+.itens-container ul li a{
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #FFF;
+    border-radius: 5px;
+    transition: 300ms;
+}
+
+.itens-container ul li a:hover{
+    background-color: rgba(44, 132, 255,1);
+}
+
 /* ========== Background ========== */
 .background{
-    background-image: url("../imgs/background-2.jpg");
+    background-image: url("../imgs/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+}
+
+
+/* ========= CONTEUDO ========== */
+
+/* Portifolio */
+.portifolio{
+    position: relative;
+    box-sizing: border-box;
+    padding-top: 80px;
     height: 100vh;
+    z-index: 199;
+}
+
+.portifolio .img-perfil{
+    display: block;
+    padding: 50px 0 0 0;
+}
+
+
+.portifolio .img-perfil img{
+    border-radius: 50%;
+    position: relative;
+    display: block;
+    margin: auto;
+    width: 200px;
+    height: 200px;
+}
+
+.portifolio .nome-perfil{
+    padding: 10px;
+    display: block;
+    height: 50%;
+}
+
+.portifolio .nome-perfil .box-name{
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0,0,0,.5);
+    border: 5px solid #FFF;
+    padding: 10px;
+    text-align: center;
+    display: inline-block;
+    color: #FFF;
+    text-shadow: 1px 1px 5px black;
+    font-weight: bold;
+}
+
+.portifolio .nome-perfil .box-name .name{
+    font-size: 50px;
+}
+
+.portifolio .nome-perfil .box-name .jobs{
+    font-size: 20px;
+}
+
+
+/* Sobre Mim */
+.sobre-mim{
+    position: relative;
+    background-color: blue;
+    z-index: 198;
 }
