@@ -24,7 +24,7 @@ function changeNav(){
     //Pega a posição da NAVBAR
     var posY = $('nav').offset().top;
             
-    //console.log(posY);
+    console.log(navWidth);
 
     // Se estiver de acordo com as condições, altera o formato da navbar, caso contrario volta ao normal.
     if(posY >= 75 && navAtivada == 0){
@@ -46,10 +46,18 @@ function backgroundScroll(){
         $('#background').css({'background-position-y': -(backgroundPosition * .5)});
     
         //Aplica um blur na imagem conforme o scroll
-        $('#background').css({"filter": "blur("+blur+"px)" });
+        //$('#background').css({"filter": "blur("+blur+"px)" });
 }
 
 // Efeito scroll automatico ao clicar em um link enviado para um elemento da pagina.
 function scrollOnClick(){
 
 }
+
+
+// Menu Responsivo
+$(document).ready(function(){
+    $('#toggler').click(function(){
+        $('#menu-itens').toggleClass('toggler-active');
+    });
+});

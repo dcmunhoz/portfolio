@@ -5,7 +5,57 @@
 */
 
 
-@media (max-width: 991.98px){
+@media (max-width: 996px){
+    nav{
+        background-color: rgba(0,0,0, .5);
+    }
+
+    .itens-container,
+    .nav-active  .itens-container
+    {
+        height: 0px;
+    }
+
+    .toggler{
+        display: inline-block;
+    }
+
+    .toggler-active{
+        background-color: rgba(0,0,0, .9) !important;
+        height: 300px !important;
+    }
+
+    .itens-container{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+
+    }
+
+    .itens-container ul{
+        
+        width: 100%;
+    }
+
+    .itens-container ul li{
+        width: 100%;
+        display: inline-block;
+        padding: 0;
+        margin: 0;
+        
+    }
+
+    .itens-container ul li a{
+        display: inline-block !important;
+        border-radius: 0;
+        width: 100% !important;
+        padding: 10px 20px !important;
+        margin: 0 !important;
+        
+    }
+
+    
 
     .portifolio .img-perfil img{
 
@@ -18,6 +68,6 @@
     }
     
     .portifolio .nome-perfil .box-name .jobs{
-        font-size: 10px;
+        font-size:14px;
     }
 }

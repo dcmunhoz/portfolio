@@ -49,12 +49,18 @@ nav,
     color: #fff;
     display: inline-block;
     position: relative;
+    height: 100px;
     float: right;
-    top: 30px;
     font-size: 30px;
     padding: 0 30px;
     display: none;
     transition: 300ms;
+}
+
+.toggler i{
+    position: relative;
+    top: 50%;
+    transform: translate(0, -70%);
 }
 
 .toggler:hover{
@@ -65,6 +71,7 @@ nav,
 #nav-content{
     padding: 0 30px;
     transition: 300ms;
+    overflow: hidden;
 }
 
 .nav-active>#nav-content{
@@ -72,12 +79,12 @@ nav,
 }
 .nav-active .toggler{
     padding: 0 15px !important;
-    top: 20px !important;
 }
 
 .nav-active,
 .nav-active  .logo-container,
-.nav-active  .itens-container{
+.nav-active  .itens-container,
+.nav-active .toggler{
     height: 80px;
 }
 
@@ -140,17 +147,21 @@ nav,
 .itens-container{
     display: inline-block;
     float: right;
+    overflow: hidden;
 }
 
 .itens-container ul{
+    display: inline-block;
     list-style: none;
     position: relative;
-    top: 50%;
-    transform: translate(0,-50%);
     box-sizing: border-box;
+    overflow: hidden;
+     top: 50%;
+    transform: translate(0, -50%);
 }
 
 .itens-container ul li{
+    box-sizing: border-box;
     display: inline-block;
     margin: 0 0;
 }
@@ -162,11 +173,11 @@ nav,
 .itens-container ul .social-icon a i{
     position: relative;
     top: 3px;
-    font-size: 20px;    
-
+    font-size: 20px;
 }
 
 .itens-container ul li a{
+    display: inline-block;
     padding: 15px 10px;
     text-decoration: none;
     color: #FFF;
