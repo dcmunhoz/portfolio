@@ -1,0 +1,23 @@
+/* 
+*
+* @author       : Daniel Costa Munhoz
+* @description  : Arquivo que contem os estilos responsivos do portifolio
+*/
+
+
+@media (max-width: 991.98px){
+
+    .portifolio .img-perfil img{
+
+        width: 150px;
+        height: 150px;
+    }
+
+    .portifolio .nome-perfil .box-name .name{
+        font-size: 40px;
+    }
+    
+    .portifolio .nome-perfil .box-name .jobs{
+        font-size: 10px;
+    }
+}
