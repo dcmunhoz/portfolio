@@ -3,9 +3,10 @@
 // @deacription : Script que comporta todas as animações, entre outros pontos visuais do portifolio
 // 
 
+var dasdsa = 0;
+
 // Variaveis globais
 var navAtivada = 0;
-var navWidth = 0;
 var toggler = 0;
 
 // Funções chamadas fora evento SCROLL pois é necessário ser executada tambem quando a pagina der reload
@@ -23,8 +24,6 @@ $(window).scroll(function(){
 function changeNav(){
     //Pega a posição da NAVBAR
     var posY = $('nav').offset().top;
-            
-    console.log(navWidth);
 
     // Se estiver de acordo com as condições, altera o formato da navbar, caso contrario volta ao normal.
     if(posY >= 75 && navAtivada == 0){
