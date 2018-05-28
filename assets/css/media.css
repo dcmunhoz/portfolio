@@ -15,9 +15,11 @@
     .img-perfil{
         display: none !important;
     }
+    
     .nome-perfil{
         margin-top: 70px !important; 
     }
+
 }
 
 @media (max-width: 996px){
