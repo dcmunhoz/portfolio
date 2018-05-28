@@ -11,6 +11,15 @@
     }
 }
 
+@media (max-width: 767.98px) and (orientation: landscape){
+    .img-perfil{
+        display: none !important;
+    }
+    .nome-perfil{
+        margin-top: 70px !important; 
+    }
+}
+
 @media (max-width: 996px){
     nav{
         background-color: rgba(0,0,0, .5);
