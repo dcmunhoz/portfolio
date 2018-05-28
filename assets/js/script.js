@@ -54,9 +54,34 @@ function scrollOnClick(){
 }
 
 
-// Menu Responsivo
 $(document).ready(function(){
+    // Menu responsivo
     $('#toggler').click(function(){
         $('#menu-itens').toggleClass('toggler-active');
     });
+
+    // Animação de scroll
+    $('.scrollTo').click(function(e){
+        // Remove a função padrão de ir até o elemento da tag 'a'
+        e.preventDefault();
+
+        // Remove a classe que faz os itens do navbar serem exibidos
+        $('#menu-itens').removeClass('toggler-active');
+
+        // Pega o valor do atributo 'href' do elemento que foi clicado
+        var target = $(this).attr('href');
+        
+        // Como base no valor do href, captura a posição do TOP em que o elemento esta
+        var moveTo = $(target).offset().top;
+
+        // Anima a pagina até a posição do elemento clicado
+        $('html, body').animate({
+            // Tira 80px do scrill pois a navbar passa a ter 80px,
+            // isso é necessário para a nav não cobrir o conteudo.
+            scrollTop: moveTo - 80
+        }, 1000, function(){
+            
+        });
+    });
+
 });
