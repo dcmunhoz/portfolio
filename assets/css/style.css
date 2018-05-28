@@ -107,7 +107,7 @@ nav,
 }
 
 .logo:hover>.name-logo{
-    color:#B6B6B6 !important;
+    color:rgb(228, 228, 228) !important;
 }
 
 .logo>img,
