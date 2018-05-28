@@ -266,7 +266,7 @@ nav,
 }
 
 
-/* Sobre Mim */
+/* ========= Sobre Mim ========= */
 .sobre-mim{
     z-index: 198;
 }
@@ -274,7 +274,7 @@ nav,
 .sobre-mim .desc{
     padding: 50px 0;
     display: block;
-    width: 60%;
+    width: 50%;
     margin: auto;
     text-align: center;
     font-size: 20px;
@@ -285,18 +285,14 @@ nav,
     margin: 0;
 }
 
-.sobre-mim .desc p.presentation{
-
-}
-
 .sobre-mim .desc p.what-do{
     padding: 0;
     font-size: 16px;
-    margin: 10px 0 30px 0;
+    margin: 10px 0 20px 0;
 }
 
 .sobre-mim .desc p.more{
-    margin: 0 0;
+    margin: 10px 0 0 0;
     font-size: 18px;
 }
 
@@ -304,6 +300,66 @@ nav,
 .qualidades{
     display: inline-block;
     width: 100%;
-    height: 300px;
     background-color: #bebebe;
+}
+
+.quali-content{
+    padding: 0px 0;
+    box-sizing: border-box;
+}
+
+.quali-content .box{
+    padding: 30px 10px;
+    margin: 30px 5px;
+    border-radius: 3px;
+    height: 300px;
+    background-color: #FFF;
+    display: inline-block;
+    width: 24%;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .4);
+    float: left;
+    transition: 300ms;
+    box-sizing: border-box;
+}
+
+.quali-content .box:hover{
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, .5);
+}
+
+
+.quali-content .box::before{
+    content: '';
+    clear:both;
+}
+
+.quali-content .box header{
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    margin: auto;
+    box-shadow: 2px 4px 6px 0px rgba(0, 0, 0, .3)
+}
+
+.quali-content .box .quali-logo{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 80px;
+}
+
+.quali-content .box section{
+    text-align: center;
+    padding-top: 10px;
+    position: relative;
+}
+
+.quali-content .box .quali-title{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.quali-content .box section span{
+    display: block;
 }
