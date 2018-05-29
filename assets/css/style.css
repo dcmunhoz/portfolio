@@ -21,7 +21,7 @@ body{
 
 
 article{
-    height: 2000px;
+    height: 3000px;
     background-color:#F3F3F3;
 }
 
@@ -304,7 +304,7 @@ nav,
 }
 
 .quali-content{
-    padding: 0px 0;
+    padding: 0 0;
     box-sizing: border-box;
 }
 
@@ -362,4 +362,75 @@ nav,
 
 .quali-content .box section span{
     display: block;
+}
+
+/* ========== Experiência ========== */
+.exp{
+    display: block;
+    position: relative;
+    width: 100%;
+    margin-top: -6px;
+}
+
+.exp-content .exp-title{
+    padding: 50px;
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    font-size: 40px;
+}
+
+.exp-box{
+    display: block;
+    position: relative;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 60px;
+    
+}
+
+.exp-box .job-logo{
+    display: block;
+    position: relative;
+    height: 100%;
+    width: 20%;
+    float: left;
+}
+
+.exp-box .job-logo img{
+    display: block;
+    margin: auto;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, .4)
+}
+
+.exp-box .job-body{
+    float: right;
+    position: relative;
+    display: inline-block;
+    width: 80%;
+}
+
+.exp-box .job-body span{
+    display: block;
+}
+
+.exp-box .job-body .job-tittle{
+    font-weight: bold;
+    font-size: 26px;
+}
+
+.exp-box .job-body .job-function{
+    font-size: 20px;
+}
+
+.exp-box .job-body .job-time{
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+
+.exp-box .job-body .job-desc{
+    font-size: 16px;
 }

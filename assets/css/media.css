@@ -4,12 +4,7 @@
 * @description  : Arquivo que contem os estilos responsivos do portifolio
 */
 
-@media (max-width: 767.98px){
-    .quali-content .box{
-        width: 100% !important;
-        margin: 5px 0 !important;
-    }
-}
+
 
 @media (max-width: 767.98px) and (orientation: landscape){
     .img-perfil{
@@ -98,8 +93,12 @@
     }
 
     .sobre-mim .desc{
-        width: 100%;
+        width: 70%;
      }
+
+     .exp-box{
+        width: 100%;
+    }
 }
 
 @media (max-width: 1199.98px){
@@ -110,7 +109,37 @@
 
     .quali-content{
         display: block;
-        align-items: center;
-        align-content: center;
+        /* align-items: center;
+        align-content: center; */
+        box-sizing: border-box;
     }
+}
+
+@media (max-width: 767.98px){
+    .quali-content .box{
+        width: 100% !important;
+        margin: 5px 0 !important;
+    }
+
+    .exp-box .job-logo{
+        padding-bottom: 10px;
+    }
+
+    .exp-box .job-logo,
+    .exp-box .job-body{
+        display: block;
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+
+    .exp-box .job-body .job-desc{
+        text-align: justify;
+        padding-top: 10px;
+    }
+
+    .sobre-mim .desc{
+        width: 100%;
+     }
+
 }

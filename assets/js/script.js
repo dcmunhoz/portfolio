@@ -79,7 +79,7 @@ $(document).ready(function(){
             // Tira 80px do scrill pois a navbar passa a ter 80px,
             // isso é necessário para a nav não cobrir o conteudo.
             scrollTop: moveTo - 80
-        }, 1000, function(){
+        }, 1300, function(){
             
         });
     });
