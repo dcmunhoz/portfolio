@@ -370,7 +370,8 @@ nav,
     position: relative;
     width: 100%;
     margin-top: -6px;
-    padding: 50px 0;
+    padding-top: 50px;
+    padding-bottom: 0;
 }
 
 .exp-content{
@@ -449,7 +450,7 @@ nav,
 .ca-content{
     width: 100%;
     text-align: center;
-    padding: 50px 0;
+    padding-top: 50px;
     margin: auto;
 }
 
@@ -549,3 +550,76 @@ nav,
     font-size: 14px;
 }
 
+/* ========== HABILIDADES ========== */
+#habilidades{
+}
+
+#habilidades .hab-content{
+    
+}
+
+.hab-content .hab-title{
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    padding: 80px 0;
+}
+
+.hab-content .hab-box{
+    display: block;
+    float: left;
+    margin: 10px !important;
+    width: 31%;
+    padding: 10px;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, .5);
+}
+
+.hab-box .hab-box-title{
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgb(207, 207, 207);
+}
+
+#idiomas .hab-box-content .hab-box-item{
+    font-size: 14px;
+    display: inline-block;
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+}
+
+#idiomas .hab-box-content .hab-box-item .idioma{
+    font-weight:bold;
+    display: block;
+    width: 50%;
+    float: left;
+}
+
+#idiomas .hab-box-content .hab-box-item .nivel{
+    float: right;    
+    display: block;
+    width: 50%;
+}
+
+#conhecimentos .hab-box-content .item-list{
+    font-size: 14px;
+    text-align: center;
+}
+
+#conhecimentos .hab-box-content .item-list .item{
+    background-color: rgb(0, 61, 175);
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 2px;
+    font-weight: bold;
+    color: #FFF;
+    border-radius: 3px;
+    transition: 500ms;
+}
+
+#conhecimentos .hab-box-content .item-list .item:hover{
+    background-color: rgb(0, 77, 219);
+
+}

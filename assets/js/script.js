@@ -48,11 +48,6 @@ function backgroundScroll(){
         //$('#background').css({"filter": "blur("+blur+"px)" });
 }
 
-// Efeito scroll automatico ao clicar em um link enviado para um elemento da pagina.
-function scrollOnClick(){
-
-}
-
 
 $(document).ready(function(){
     // Menu responsivo
