@@ -620,6 +620,65 @@ nav,
 }
 
 #conhecimentos .hab-box-content .item-list .item:hover{
-    background-color: rgb(0, 77, 219);
+    background-color: rgb(0, 89, 255);
 
+}
+
+/* ========== PROJETOS ========== */
+#projetos .proj-content{
+ 
+}
+
+.proj-content .proj-title{
+    text-align:center;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 80px;
+}
+
+.proj-content .proj-body .projeto{
+    display: inline-block;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.proj-content .proj-body .projeto .proj-img{
+    display: block;
+    width: 35%;
+    float: left;
+}
+
+.proj-content .proj-body .projeto:nth-child(even) .proj-img{
+    float: right;
+}
+
+.proj-content .proj-body .projeto .proj-img img{
+
+    width: 100%;
+    border-radius: 5px;
+
+}
+
+.proj-content .proj-body .projeto .proj-desc{
+    display: inline-block;
+    position: relative;
+    width: 65%;
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: justify;
+}
+
+.projeto .proj-desc div{
+    margin: 5px 0;
+}
+.projeto .proj-desc .title-proj{
+    font-weight: bold;
+}
+
+.projeto .proj-desc .tec-proj span{
+    font-weight: bold;
+}
+
+.projeto .proj-desc .tec-proj img{
+    width: 20px;
 }
