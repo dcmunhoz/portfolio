@@ -21,7 +21,7 @@ body{
 
 
 article{
-    /* height: 3000px; */
+    height: 10px;
     background-color:#F3F3F3;
 }
 
@@ -204,6 +204,7 @@ nav,
     background-attachment: fixed;
     width: 100%;
     height: 100vh;
+    display: block;
     position: relative;
     overflow: hidden;
     z-index: 1;
@@ -657,7 +658,8 @@ nav,
 .proj-content .proj-body .projeto .proj-img img{
 
     width: 100%;
-    border-radius: 5px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, .5);
 
 }
 
@@ -683,6 +685,7 @@ nav,
 
 .projeto .proj-desc .tec-proj img{
     width: 20px;
+
 }
 
 /* ========== CONTATO ========== */
