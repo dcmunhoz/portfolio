@@ -211,7 +211,7 @@
     }
 
     .background{
-        background-size: auto;
+        background-size: cover;
         background-position: bottom;
     }
 

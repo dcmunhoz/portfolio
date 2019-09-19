@@ -26,10 +26,10 @@ function changeNav(){
     var posY = $('nav').offset().top;
 
     // Se estiver de acordo com as condições, altera o formato da navbar, caso contrario volta ao normal.
-    if(posY >= 75 && navAtivada == 0){
+    if(posY >= 200 && navAtivada == 0){
         $('nav').addClass('nav-active');
         navAtivada = 1;
-    }else if(posY < 75 && navAtivada == 1){
+    }else if(posY < 200 && navAtivada == 1){
         $('nav').removeClass('nav-active');
         navAtivada = 0;
     }
@@ -42,7 +42,7 @@ function backgroundScroll(){
         var blur = backgroundPosition / 300;
     
         //Seta a propriedade background position y do background negativa(para subir), multiplicando o valor do scroll. Qaunto maior o valor da multiplicação, mais rapido sera o scroll
-        $('#background').css({'background-position-y': -(backgroundPosition * .5)});
+        $('#background').css({'background-position-y': -(backgroundPosition * .07)});
     
         //Aplica um blur na imagem conforme o scroll
         //$('#background').css({"filter": "blur("+blur+"px)" });
