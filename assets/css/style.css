@@ -274,6 +274,8 @@ nav,
 /* ========= Sobre Mim ========= */
 .sobre-mim{
     z-index: 198;
+    font-weight: bold;
+    color: #28213d;
 }
 
 .sobre-mim .desc{
@@ -305,7 +307,7 @@ nav,
 .qualidades{
     display: inline-block;
     width: 100%;
-    background-color: #bebebe;
+    background-color: #eeeeee;
 }
 
 .quali-content{
@@ -614,7 +616,7 @@ nav,
 }
 
 #conhecimentos .hab-box-content .item-list .item{
-    background-color: rgb(0, 61, 175);
+    background-color: #6243c7;
     display: inline-block;
     padding: 5px 10px;
     margin: 2px;
@@ -625,7 +627,7 @@ nav,
 }
 
 #conhecimentos .hab-box-content .item-list .item:hover{
-    background-color: rgb(0, 89, 255);
+    background-color: #5b39ca;
 
 }
 
@@ -693,7 +695,7 @@ nav,
 /* ========== CONTATO ========== */
 
 #contatos{
-    background-color: #bebebe;
+    background-color: #f5f5f5;
     display: inline-block;
     width: 100%;
 }
@@ -732,7 +734,7 @@ nav,
     color: rgb(255, 255, 255);
     font-size: 20px;
     border-radius: 50%;
-    background-color: rgb(0, 89, 255);;
+    background-color: #6243c7;
     width: 40px;
     height: 40px;
     line-height: 40px;
@@ -743,5 +745,5 @@ footer{
     padding: 10px;
     text-align: center;
     color: #FFF;
-    background-color: rgb(73, 73, 73);
+    background-color: #6243c7;
 }
