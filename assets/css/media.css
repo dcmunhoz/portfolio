@@ -20,6 +20,11 @@
 @media (max-width: 996px){
     nav{
         background-color: rgba(0,0,0, .5);
+        padding: 0;
+    }
+
+    #nav-content{
+        padding: 0;
     }
 
     .itens-container,

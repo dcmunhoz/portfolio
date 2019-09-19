@@ -42,7 +42,7 @@ function backgroundScroll(){
         var blur = backgroundPosition / 300;
     
         //Seta a propriedade background position y do background negativa(para subir), multiplicando o valor do scroll. Qaunto maior o valor da multiplicação, mais rapido sera o scroll
-        $('#background').css({'background-position-y': -(backgroundPosition * .07)});
+        $('#background').css({'background-position-y': -(backgroundPosition * .1)});
     
         //Aplica um blur na imagem conforme o scroll
         //$('#background').css({"filter": "blur("+blur+"px)" });
